@@ -1,0 +1,145 @@
+/* 
+---01 TYPOGRAPHY SYSTEM
+  -FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+  -FONT WEIGHTS:
+    DEFUALT:400
+    500
+    600
+    700
+  -LINE HEIGHTS:
+    DEFUALTS:1
+   
+  
+  -letter spacing:
+   
+
+
+---02 COLORS
+  secondarybackground:
+      #ecf4f4
+  -PRIMARY:
+      #fb3d65,
+     
+
+
+  -TINTS: 
+ #d4dcdc
+  -SHADES 
+
+  -GRAYS: 
+    #555, 
+    #333,
+    #999
+    #6f6f6f
+
+---05 SHADOWS
+- box-shadow: 0 3.2rem 6.4rem rgb(0 0 0 / 15%);
+- box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 8%);
+---06 BORDER-RADOUS
+   -9px 
+   -50%
+---07 WHITE-SPACES
+  -SPACING SYSTEM (px)
+        2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(251, 61, 102, 0.544);
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #0d1133;
+  overflow-x: hidden;
+}
+/**************************/
+/* GENERAL REUSEABLE COMPONENTS  */
+/* *********************** */
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0 8rem;
+}
+.grid {
+  display: grid;
+  row-gap: 4.8rem;
+  column-gap: 4.8rem;
+  /* margin-bottom: 9.6rem; */
+}
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+.grid-item-centered {
+  align-items: center;
+}
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+ul {
+  list-style: none;
+}
+strong {
+  font-weight: 500;
+}
+.center-text {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+.primary-heading {
+  font-size: 5.2rem;
+  font-weight: 400;
+  letter-spacing: 0.75px;
+  line-height: 1.1;
+  margin-bottom: 1.6rem;
+}
+.secondary-heading {
+  font-size: 4.4rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  line-height: 1.2;
+}
+.heading-description {
+  font-size: 1.8rem;
+  color: #666;
+  line-height: 1.6;
+}
+.center-text {
+  text-align: center;
+}
+.white-text {
+  color: white;
+}
+.large-icon-size {
+  padding: 1.2rem;
+}
